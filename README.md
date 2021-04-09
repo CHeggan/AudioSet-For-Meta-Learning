@@ -12,8 +12,9 @@ A convenient set of tools for downloading a quality controlled version of AudioS
 
 ## Possible Issues
 Is possible for YouTube to throttle access to their site after too many access requests. There are a few potential ways around this, these are:
-- Setting some fixed time delay between downloads. This is very simple to set in the main control YAML file however comes with the caviat of significantly slowing down teh full download process
-- Adding a cookies.txt file to the main script folder using your own YouTube and/or Google credentials. This is a bit more involved to set up however should allow the downoad to continue at normal speed.
+- Setting some fixed time delay between downloads. This is very simple to set in the main control YAML file however comes with the caviat of significantly slowing down the full download process
+- Adding a cookies.txt file to the main script folder using your own YouTube and/or Google credentials. This is a bit more involved to set up however should allow the downoad to continue at normal speed. How to do this is covered in the Section  [Using A Cookies File](#markdown-Using-A-Cookies-File)
+
 
 ## Meta-Learning Consideratioons
 
