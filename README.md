@@ -20,4 +20,15 @@ Is possible for YouTube to throttle access to their site after too many access r
 
 ## Using A Cookies File
 
+One of the methods of getting around YouTube's 'Too Many Requests' issue is to use a cookies file whihc contains your encoded personal Google Credentials for use in the YouTube-DL package. This can be done by following these steps:
+- Add the following extension to a chromium based browser(i.e Edge, Chrome etc) [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg). This extension helps collect the cookie data from the websites that have been used.
+- Open Google or Youtube in a new tab and sign into an account.
+- In this same tab Click the EditThisCookie extension and navigate to the top bar. Click the export button (5th from the left in my current version) in this top bar, this will copy the cookies needed into the clipboard.
+- Paste this data into a new .txt file and save it as 'cookies.txt'
+- Place this file in the main script directory.
+
+
+
+
+
 ## References
