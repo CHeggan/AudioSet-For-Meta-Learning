@@ -16,7 +16,7 @@ Is possible for YouTube to throttle access to their site after too many access r
 - Adding a cookies.txt file to the main script folder using your own YouTube and/or Google credentials. This is a bit more involved to set up however should allow the downoad to continue at normal speed. How to do this is covered in the Section  [Using A Cookies File](#markdown-Using-A-Cookies-File).
 
 
-## Meta-Learning Consideratioons
+## Meta-Learning Considerations
 
 ## Using A Cookies File
 
