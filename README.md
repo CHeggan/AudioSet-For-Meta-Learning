@@ -2,9 +2,11 @@
 A convenient set of tools for downloading a quality controlled version of AudioSet in Python, with additional considerations for Meta-Learning based on current research.
 
 
-Released by Google in 2017, the [AudioSet](https://research.google.com/audioset/) ontology consists of 632 hierarchically structured audio event classes spanning 2,084,320 10-second long samples. Some of the most importtant things to know about this dataset are the following:
+Released by Google in 2017, the [AudioSet](https://research.google.com/audioset/) ontology consists of 632 hierarchically structured audio event classes spanning 2,084,320 10-second long samples. Some importtant things to know about this dataset are the following:
 - The raw data samples are not readily avilable for download(which is why this repo and others like it exist). Instead the data has been pre-feature-extracted using Google's own VGG-ish network \cite{}, the output for whch is a 128-dimentional feature vector for every second of a given sample(1Hz).
 - In the bulk of the meta data supplied with the set that enables us to scrape it from YouTube, the classes are not labelled by name of event, but instead by some id. Id -> class name conversions are/can be done using the 'ontology.json' file.
+- Estimated qualities of sound events are given in the form of true counts per some number of samples form a given class. This additional level of evaluation appears to manual with a true count representeing the event appearing within a class sample, e.g if 8 out of 10 samples in some class contained teh event it should it would have an 80% estimated quality.
+
 
 ## Basic Download Details
 
