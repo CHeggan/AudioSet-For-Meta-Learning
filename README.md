@@ -2,7 +2,7 @@
 A convenient set of tools for downloading a quality controlled version of AudioSet in Python, with additional considerations for Meta-Learning based on current research.
 
 
-[AudioSet](https://research.google.com/audioset/) 
+Realeased by Google in 2017, [AudioSet](https://research.google.com/audioset/) is a large collection of sound based events organised in a heirarchical fashion, currently spanning 632 audio classes and 2,084,320 10-second long samples. 
 
 ## Basic Download Details
 
