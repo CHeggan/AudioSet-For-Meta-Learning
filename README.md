@@ -13,16 +13,33 @@ Some important things to know about this dataset are the following:
 
 
 ## Basic Download Details
+Should include here:
+- How to set up the hyper params and main YAML file for teh scripts
+- How the num samples works, i.e there raent an equal number per class, so you get up to num in class if n> num in class
+- How teh different scripts thmselves interlink, creation of big data etc
+- rough space needed on dirve etc/ sizes of files and clips
+
 
 ## Different Scripts
+Include:
+- Brief overview of teh single and multi threaded versions of the downloaidng along with their respective benefits and drawbacks
+- Estimated times with each script/ time differences
+- How do these differ in how teh user interacts with them, if in any wway
 
 ## Reproducibility & Exceptions
+INclude:
+- How the scripts try to be reproducible. The successes and failures here
+- potential issues with getting the exact same data gaain, ile videos being removed or privated etc - surprisingly common
 
 ## Possible Issues
 Is possible for YouTube to throttle access to their site after too many access requests. There are a few potential ways around this, these are:
 - Setting some fixed time delay between downloads. This is very simple to set in the main control YAML file however comes with the caviat of significantly slowing down the full download process.
 - Adding a cookies.txt file to the main script folder using your own YouTube and/or Google credentials. This is a bit more involved to set up however should allow the downoad to continue at normal speed. How to do this is covered in the Section  [Using A Cookies File](#markdown-Using-A-Cookies-File).
 
+## Post Proccessing Notes
+Include:
+- How audio data should be scaled before spectrogram etc 
+- additional file cleaniong, ie removing samples that arent correct langth
 
 ## Meta-Learning Considerations
 
