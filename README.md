@@ -3,7 +3,7 @@ A convenient set of tools for downloading a quality controlled version of AudioS
 
 
 Released by Google in 2017, the [AudioSet](https://research.google.com/audioset/) ontology consists of 632 hierarchically structured audio event classes spanning 2,084,320 10-second long samples. Other useful resources for understanding and using AudioSet:
-- The [blog](https://ai.googleblog.com/2017/03/announcing-audioset-dataset-for-audio.html).  post by Google at launch with some general details on the collection and labelling process.
+- [Blog](https://ai.googleblog.com/2017/03/announcing-audioset-dataset-for-audio.html) post by Google at launch with some general details on the collection and labelling process.
 - The TensorFlow research [branch](https://github.com/tensorflow/models/tree/master/research/audioset#models-for-audioset-a-large-scale-dataset-of-audio-events) for the set and its accompanying models.
 
 Some important things to know about this dataset are the following:
