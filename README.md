@@ -42,6 +42,10 @@ Include:
 - additional file cleaniong, ie removing samples that arent correct langth
 
 ## Meta-Learning Considerations
+Include:
+- How current ppaers(two of them) deal with audioset and why thye do it in this way- ref
+- what have we done to follow and what differences have been made
+- Best recommendation for setting up this data for meta-learning based on all of these considerations
 
 ## Using A Cookies File
 
