@@ -21,6 +21,12 @@ Should include here:
 
 
 ## Different Scripts
+
+There are two possible download scripts included in this repo, these include a single threaded version(also referred to as the normal one) primarily built around the idea of reproducibility and a multithreaded version that was built with the intension of trading off some reproducibility in favour of raw speed. In their current states, the recommendation is to **use the single threaded version**(single_thread_download.py). This is for a few reasons:
+- The better reproducibility of the normal script allows for exact rebuilding of the set which can be invaluable in the case of data loss or corrution
+- 
+- Although built around the idea of speed, the multiprocessing version is actally overall slower than its sigle threaded conterpart in local tests. This appears to be a jo
+
 Include:
 - Brief overview of teh single and multi threaded versions of the downloaidng along with their respective benefits and drawbacks
 - Estimated times with each script/ time differences
@@ -30,6 +36,7 @@ Include:
 INclude:
 - How the scripts try to be reproducible. The successes and failures here
 - potential issues with getting the exact same data gaain, ile videos being removed or privated etc - surprisingly common
+- A large dataframe/ csv fle is generated which contains all amples downlaoded and put into the set
 
 ## Possible Issues
 Is possible for YouTube to throttle access to their site after too many access requests. There are a few potential ways around this, these are:
