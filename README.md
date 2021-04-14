@@ -6,7 +6,7 @@ Released by Google in 2017, the [AudioSet](https://research.google.com/audioset/
 - [Blog](https://ai.googleblog.com/2017/03/announcing-audioset-dataset-for-audio.html) post by Google at launch with some general details on the collection and labelling process.
 - The TensorFlow research [branch](https://github.com/tensorflow/models/tree/master/research/audioset#models-for-audioset-a-large-scale-dataset-of-audio-events) for the set and its accompanying models.
 
-![alt text](Images/AudioSet_logo.png "Title")
+![](images/AudioSet_logo.png )
 
 Some important things to know about this dataset are the following:
 - The raw data samples are not readily avilable for download(which is why this repo and others like it exist). Instead the data has been pre-feature-extracted using Google's own [VGG-ish network](https://github.com/tensorflow/models/tree/master/research/audioset/vggish), the output for whch is a 128-dimentional feature vector for every second of a given sample(1Hz).
