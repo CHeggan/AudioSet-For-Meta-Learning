@@ -25,7 +25,7 @@ Should include here:
 ## Different Scripts
 There are two different download scripts included in this repo, these include a single threaded version(also referred to as the normal one) primarily built around the idea of reproducibility and a multithreaded version that was built with the intention of trading off some reproducibility in favour of raw speed. In their current states, the recommendation is to **use the single threaded version**(single_thread_download.py). This is for a few reasons:
 - The better reproducibility of the normal script allows for exact rebuilding of the set which can be invaluable in the case of data loss or corrution.
-- The multiporceesing version, in its current implementtaion is not faster in most situations. This could be due to a few different isses, covered in a later [section](#markdown-Potenial Improvements). The code is also capable of saturating both CPU and network connection (tested on Ryzen 2700x and 100 Mbps connection) and so could cause significant slowdowns of the device/network being used.
+- The multiporceesing version, in its current implementtaion is not faster in most situations. This could be due to a few different isses, covered in a later [section](#markdown-Potenial Improvements). The code is also capable of saturating both CPU cores and network connection (tested on Ryzen 2700x and 100 Mbps connection) and so could cause significant slowdowns of the device/network being used.
 
 
 ## Reproducibility & Exceptions
