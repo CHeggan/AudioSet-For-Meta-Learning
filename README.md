@@ -73,10 +73,10 @@ Although the download codes included in this repo function as intended and were 
 ## References
 Websites and Other Repositories:
 - [AudioSet](https://research.google.com/audioset/index.html)
-- [Another Pythopn based AudioSet download Repo which inspired this repos creation. Also contains links to learn more about Voice Computing](https://github.com/jim-schwoebel/download_audioset)
 - [AudioSet GitHub](https://github.com/audioset/ontology)
+- [Another Pythopn based AudioSet download Repo which inspired this repos creation. Also contains links to learn more about Voice Computing](https://github.com/jim-schwoebel/download_audioset)
 
 Research Papers:
 - ["Audio Set: An ontology and human-labeled dataset for audio events"](https://research.google/pubs/pub45857/)
-- []()
-- []()
+- ["Few-shot Acoustic Event Detection via Meta Learning"](https://arxiv.org/pdf/2002.09143.pdf)
+- ["A Study of Few-Shot Audio Classification"](https://arxiv.org/abs/2012.01573)
