@@ -24,10 +24,10 @@ Should include here:
 
 ## Different Scripts
 
-There are two possible download scripts included in this repo, these include a single threaded version(also referred to as the normal one) primarily built around the idea of reproducibility and a multithreaded version that was built with the intension of trading off some reproducibility in favour of raw speed. In their current states, the recommendation is to **use the single threaded version**(single_thread_download.py). This is for a few reasons:
-- The better reproducibility of the normal script allows for exact rebuilding of the set which can be invaluable in the case of data loss or corrution
+There are two different download scripts included in this repo, these include a single threaded version(also referred to as the normal one) primarily built around the idea of reproducibility and a multithreaded version that was built with the intention of trading off some reproducibility in favour of raw speed. In their current states, the recommendation is to **use the single threaded version**(single_thread_download.py). This is for a few reasons:
+- The better reproducibility of the normal script allows for exact rebuilding of the set which can be invaluable in the case of data loss or corrution.
+- The multiporceesing version, in its current implementtaion is not faster in most situations. This could be due to a few different isses, covered in a later [section]().
 - 
-- Although built around the idea of speed, the multiprocessing version is actally overall slower than its sigle threaded conterpart in local tests. This appears to be a jo
 
 Include:
 - Brief overview of teh single and multi threaded versions of the downloaidng along with their respective benefits and drawbacks
@@ -44,6 +44,8 @@ INclude:
 Is possible for YouTube to throttle access to their site after too many access requests. There are a few potential ways around this, these are:
 - Setting some fixed time delay between downloads. This is very simple to set in the main control YAML file however comes with the caviat of significantly slowing down the full download process.
 - Adding a cookies.txt file to the main script folder using your own YouTube and/or Google credentials. This is a bit more involved to set up however should allow the downoad to continue at normal speed. How to do this is covered in the Section  [Using A Cookies File](#markdown-Using-A-Cookies-File).
+- 
+- Youtube-dl updates etc(explain)
 
 ## Post Proccessing Notes
 Include:
