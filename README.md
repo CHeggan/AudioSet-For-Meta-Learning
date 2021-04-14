@@ -63,6 +63,11 @@ One of the methods of getting around YouTube's 'Too Many Requests' issue is to u
 - Paste this data into a new .txt file and save it as 'cookies.txt'
 - Place this file in the main script directory.
 
+## Potenial Improvements
+
+Although the download codes included in this repo function as intended and were perfectly sufficient for obtaining the slice of AudioSet that was sought after, there is definitely still room for improvement. Im sure there are many people that will be able to suggest better tweaks but the folowing are ones that I think could make a fair amount of difference with respect to time optimisation and ease of use:
+- 
+
 
 
 
