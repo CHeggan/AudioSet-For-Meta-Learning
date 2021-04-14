@@ -66,16 +66,17 @@ One of the methods of getting around YouTube's 'Too Many Requests' issue is to u
 ## Potenial Improvements
 
 Although the download codes included in this repo function as intended and were perfectly sufficient for obtaining the slice of AudioSet that was sought after, there is definitely still room for improvement. Im sure there are many people that will be able to suggest better tweaks but the folowing are ones that I think could make a fair amount of difference with respect to time optimisation and ease of use:
-- 
-
 
 
 
 
 ## References
+Websites and Other Repositories:
 - [AudioSet](https://research.google.com/audioset/index.html)
-- Another Pythopn based AudioSet download [Repo](https://github.com/jim-schwoebel/download_audioset) which inspired this repos creation. Also contains links to learn more about Voice Computing
+- [Another Pythopn based AudioSet download Repo which inspired this repos creation. Also contains links to learn more about Voice Computing](https://github.com/jim-schwoebel/download_audioset)
 - [AudioSet GitHub](https://github.com/audioset/ontology)
-- [Audio Set: An ontology and human-labeled dataset for audio events](https://research.google/pubs/pub45857/)
 
+Research Papers:
+- ["Audio Set: An ontology and human-labeled dataset for audio events"](https://research.google/pubs/pub45857/)
+- []()
 - []()
