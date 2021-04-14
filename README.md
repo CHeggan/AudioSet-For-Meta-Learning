@@ -73,3 +73,9 @@ Although the download codes included in this repo function as intended and were 
 
 
 ## References
+- [AudioSet](https://research.google.com/audioset/index.html)
+- Another Pythopn based AudioSet download [Repo](https://github.com/jim-schwoebel/download_audioset) which inspired this repos creation. Also contains links to learn more about Voice Computing
+- [AudioSet GitHub](https://github.com/audioset/ontology)
+- [Audio Set: An ontology and human-labeled dataset for audio events](https://research.google/pubs/pub45857/)
+
+- []()
