@@ -41,10 +41,13 @@ Is possible for YouTube to throttle access to their site after too many access r
 - 
 - Youtube-dl updates etc(explain)
 
-## Post Proccessing Notes
-Included within this repository is a variety of post-processing scripts, specifically designed for parsing over the full dataset in one sweep. These include:
+## Post Proccessing Scripts
+Included within this repository is a variety of post-processing scripts, specifically designed for parsing over the full dataset in one sweep. There is also a few other helpful codes included here focused around using the dataste for machine learning. The scripts included are:
+- Dataset cleaning which removes invalid samples, i.e silence for the full audio clip
 - wav to numpy (.npy) file conversion. This speeds up raw data loading into python by about 80x and reduces the total storage size by about 2x as well.
-- 
+- Raw audio to spectrogram conversion.
+- A PyTorch dataset class.
+- Global and channel spectrogram normalisation.
 
 Include:
 - How audio data should be scaled before spectrogram etc 
@@ -65,7 +68,7 @@ One of the methods of getting around YouTube's 'Too Many Requests' issue is to u
 - Paste this data into a new .txt file and save it as 'cookies.txt'
 - Place this file in the main script directory.
 - Set the 'cookies' argument in the 'control.yaml' file to a 1. 
-- Run either of the available download scripts as normal
+- Run either of the available download scripts as normal.
 
 ## Potenial Improvements
 Although the download codes included in this repo function as intended and were perfectly sufficient for obtaining the slice of AudioSet that was sought after, there is definitely still room for improvement. Im sure there are many people that will be able to suggest better tweaks but the folowing are ones that I think could make a fair amount of difference with respect to time optimisation and ease of use:
