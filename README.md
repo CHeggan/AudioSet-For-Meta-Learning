@@ -42,6 +42,10 @@ Is possible for YouTube to throttle access to their site after too many access r
 - Youtube-dl updates etc(explain)
 
 ## Post Proccessing Notes
+Included within this repository is a variety of post-processing scripts, specifically designed for parsing over the full dataset in one sweep. These include:
+- wav to numpy (.npy) file conversion. This speeds up raw data loading into python by about 80x and reduces the total storage size by about 2x as well.
+- 
+
 Include:
 - How audio data should be scaled before spectrogram etc 
 - additional file cleaniong, ie removing samples that arent correct langth
