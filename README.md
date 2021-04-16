@@ -48,16 +48,13 @@ Is possible for YouTube to throttle access to their site after too many access r
 - Youtube-dl updates etc(explain)
 
 ## Post Proccessing Scripts
-Included within this repository is a variety of post-processing scripts, specifically designed for parsing over the full dataset in one sweep. There is also a few other helpful codes included here focused around using the dataste for machine learning. The scripts included are:
+Included within this repository is a variety of post-processing scripts, specifically designed for parsing over the full dataset in one sweep. There is also a few other helpful codes included here focused around using the dataset for machine learning. The scripts included are:
 - Dataset cleaning which removes invalid samples, i.e silence for the full audio clip
 - wav to numpy (.npy) file conversion. This speeds up raw data loading into python by about 80x and reduces the total storage size by about 2x as well.
 - Raw audio to spectrogram conversion.
 - A PyTorch dataset class.
 - Global and channel spectrogram normalisation.
-
-Include:
-- How audio data should be scaled before spectrogram etc 
-- additional file cleaniong, ie removing samples that arent correct langth
+- 
 
 ## Meta-Learning Considerations
 Include:
