@@ -29,10 +29,16 @@ There are two different download scripts included in this repo, these include a 
 
 
 ## Reproducibility & Exceptions
-INclude:
-- How the scripts try to be reproducible. The successes and failures here
-- potential issues with getting the exact same data gaain, ile videos being removed or privated etc - surprisingly common
-- A large dataframe/ csv fle is generated which contains all amples downlaoded and put into the set
+The datasets that the download scripts generate,especially the single threaded version, aim to be exactly reprodicble exclusing some exceptions that may occur. The scripts achieve this by:
+- Packages seeding for both the random sampling of the class specific sub-dataset which is used to grab Youtube Video-IDs(YIDs) to download and for the splitting of the full set into meta-sets.
+- A csv file/dataframe of downloaded files is generated for each class and is contained within the same folder as the class data itself. This file has the YIDs of all downloaded files along, the class id/proper name and the YID->filename converions for each data sample.
+- A full dataset dataframe containing the needed meta-data to reconstruct the full set without any of the first steps again. This is paired with a script that can rebuild the full set once again from this one dataframe(once again be catious of exceptions and now unavailable files). This reconstruction would then contain no files that werent in the first one along with the added benefit of downloading more quickly as much of the overhead has alreayd been done. 
+
+The potential exceptions that may prevent exact datasets being repdouced from scratch are all due to the avilablity of specific samples from Youtube, these include:
+- Video deletion, removal or privitisation
+- Geograhical restricted access
+- Required to sign in(this specific issue can be mitigated with cookies file addiiton)
+- User account deletion
 
 ## Possible Issues
 Is possible for YouTube to throttle access to their site after too many access requests. There are a few potential ways around this, these are:
