@@ -21,7 +21,7 @@ dir:
   # The folder path from working directory to the available meta-data
   meta_folder: 'MetaData'
   # The name of the file within the meta-data folder from which to get sample data
-  # This set to defualt 'big_data.csv' but can be replaced with a already downloaded set csv 
+  # This set to defualt 'big_data.csv' but can be replaced with a already downloaded set csv
   #     which with a matching 'suitable_classes.npy' file can be used to exactly reproduce a set
   df_file: 'big_data.csv'
 
