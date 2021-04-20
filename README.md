@@ -15,6 +15,11 @@ Some important things to know about this dataset are the following:
 
 
 ## Basic Download Details
+```ruby
+def hello
+   puts "Hello world!"
+end
+```
 Should include here:
 - How to set up the hyper params and main YAML file for teh scripts
 - How the num samples works, i.e there raent an equal number per class, so you get up to num in class if n> num in class
