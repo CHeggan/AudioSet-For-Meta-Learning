@@ -4,8 +4,7 @@ Main file for obtaining the meta data needed for downloading classes of interest
     in the expected order of execution.
 
 The outputs of this file are the following:
-    -> 'big_data.csv': a dataframe which contains meta data for all classes 
-        contained in the selection made
+    -> 'big_data.csv': a dataframe which contains meta data for all classes
     -> 'suitable_classes.npy': a numpy save file containing the selected class 
         IDs along with their human named counterparts
 """
@@ -17,8 +16,8 @@ import os
 import yaml
 
 from pathlib import Path
-from get_classes import main_get_classes, suitable_class_extractor, graphing
 from compile_data import compile_dataframes
+from get_classes import main_get_classes, suitable_class_extractor, graphing
 
 ##############################################################################
 #MAIN
@@ -32,11 +31,11 @@ if __name__== '__main__':
 
 
     # Sets the directory of the meta-data
-    defaultdir=os.getcwd()
+    defaultdir = os.getcwd()
     path_to_meta = os.path.join(defaultdir, params['dir']['meta_folder'])
 
 
-    # Looks for the 'big_data.csv' file -if not already made, will be created
+    # Looks for the 'big_data.csv' file - if not already made, will be created
     main_df = os.path.join(path_to_meta,'big_data.csv')
     main_df = Path(main_df)
 
@@ -49,7 +48,7 @@ if __name__== '__main__':
 
 
     # This fucntion is contained within 'get_classes.py'
-    # It generates a suitable class ID/name array whic is used to compile meta-data 
+    # It generates a suitable class ID/name array which is used to compile meta-data 
     main_get_classes(leafs=params['classes']['leafs'], 
                         qual=params['classes']['quality_threshold'],
                         path_to_meta=path_to_meta)
