@@ -11,17 +11,17 @@ The outputs of this file are the following:
 """
 
 ##############################################################################
-"""IMPORTS"""
+#IMPORTS
 ##############################################################################
 import os
 import yaml
 
 from pathlib import Path
-from get_classes import *
-from compile_data import *
+from get_classes import main_get_classes, suitable_class_extractor, graphing
+from compile_data import compile_dataframes
 
 ##############################################################################
-"""MAIN"""
+#MAIN
 ##############################################################################
 
 if __name__== '__main__':
@@ -43,7 +43,7 @@ if __name__== '__main__':
     if main_df.is_file():
         pass
     else:
-        print('Compiling meta-data files ..... May take a few minutes')
+        print('Compiling meta-data files ..... This takes a fair few minutes, time for a coffee?')
         compile_dataframes(path_to_meta)
         print("The large joint dataframe 'big_data.csv' has been created")
 

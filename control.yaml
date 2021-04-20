@@ -1,0 +1,27 @@
+#This is the main control file for the whole download process
+# Change parameters here to control how the final dataset will look
+
+classes:
+  # Do we only want leaf classes or not, True for only leaf, False for all
+  leafs: True
+  # Estimated quality threshold for the classes, num between 0 and 1
+  # What number to pick here can be visually guided by the included quality
+  #     vs num classes avaialble figure
+  quality_threshold: 0.8
+
+data:
+  # Maximum number of final downloaded and processed samples per class
+  max_per_class: 200
+  # Start and end indicies for downloading some slice of the classes wanted
+  # An end_index > num classes being downloaded will cause crash so use carefully
+  start_index: 0
+  end_index: 'None'
+
+dir:
+  # The folder path from working directory to the available meta-data
+  meta_folder: 'MetaData'
+  # The name of the file within the meta-data folder from which to get sample data
+  # This set to defualt 'big_data.csv' but can be replaced with a already downloaded set csv 
+  #     which with a matching 'suitable_classes.npy' file can be used to exactly reproduce a set
+  df_file: 'big_data.csv'
+

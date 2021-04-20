@@ -29,7 +29,7 @@ OUTPUTS:
 """
 
 ###############################################################################
-"""IMPORTS AND DIRECTORY POINTING"""
+#IMPORTS AND DIRECTORY POINTING
 ###############################################################################
 import os
 import warnings
@@ -40,13 +40,18 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 ###############################################################################
-"""BIG DATAFRAME CREATION"""
+# BIG DATAFRAME CREATION
 ###############################################################################
 def compile_dataframes(path_to_meta):
     """
+    Function creates a large compiled dataframe of all available meta-data in 
+        the meta-data folder passed
 
     :param path_to_meta: str
         The directory path to the meta data folder
+
+    :saves: csv file
+        A file with all available meta-data compiled into one
     """
     # Meta data sheet imports
     eval_segments = pd.read_csv(path_to_meta + '\\eval_segments.csv', header=[1], low_memory=False)
@@ -69,4 +74,3 @@ def compile_dataframes(path_to_meta):
     # Concats the two split dataframes back together before finally saving
     big_data_full_cleaned = pd.concat([big_data_first_three, big_data_rest_cleaned], axis=1, ignore_index=True)
     big_data_full_cleaned.to_csv(path_to_meta + '\\big_data.csv')
-

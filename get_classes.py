@@ -62,7 +62,7 @@ def suitable_class_extractor(quality, path_to_meta, leaf=True):
 
     # Stores the suitable classes to extract in 2D, [mid, label_name]
     suitable = []
-    for i in range(len(ontology)):
+    for i, val in enumerate(ontology):
         example = ontology[i]
 
         # Checks if leaf node or not
@@ -116,7 +116,7 @@ def graphing(path_to_meta):
 
 
 ###############################################################################
-"""MAIN FUNCTION WITH CALL"""
+#MAIN FUNCTION WITH CALL
 ###############################################################################
 def main_get_classes(leafs, qual, path_to_meta):
     """
