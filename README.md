@@ -1,4 +1,4 @@
-# AudioSet Download and Use In Meta-Learning
+# AudioSet Download and Use In Meta-Learning    [![CodeFactor](https://www.codefactor.io/repository/github/cheggan/audioset-for-meta-learning/badge?s=750292eb018de440a569bba7ac43889da24f176e)](https://www.codefactor.io/repository/github/cheggan/audioset-for-meta-learning)
 A convenient set of tools for downloading a quality controlled version of AudioSet in Python, with additional considerations for Meta-Learning based on current and on-going research.
 
 
