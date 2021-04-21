@@ -48,6 +48,3 @@ if __name__ == '__main__':
                     big_data=big_data,
                     cookie_path=params['dir']['cookie_path'],
                     seed=params['seed'])
-
-
-

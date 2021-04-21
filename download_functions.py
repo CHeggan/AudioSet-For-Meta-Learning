@@ -122,7 +122,7 @@ def download_audio(link, start, end, cookie_path):
 
         # Comapres new to old directory file lists to find the new file
         listdir2=os.listdir()
-        for i in range(len(listdir2)):
+        for i, val in enumerate(listdir2):
             if listdir2[i] not in listdir:
                 filename=listdir2[i]
                 break
@@ -178,9 +178,9 @@ def create_directories(textlabels, expected_dir):
             os.chdir(os.getcwd()+'/AudioSet_Data')
 
     # Creates a unique folder for every class based on textlabels if doesnt exist already
-    for i in range(len(textlabels)):
+    for i, text_label in enumerate(textlabels):
         try:
-            os.mkdir(textlabels[i])
+            os.mkdir(text_label)
         except:
             pass
 
