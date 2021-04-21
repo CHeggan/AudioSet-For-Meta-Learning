@@ -1,6 +1,9 @@
 #This is the main control file for the whole download process
 # Change parameters here to control how the final dataset will look
 
+# Seeding for random sampling processes, recommmended to keep default
+seed: 0
+
 classes:
   # Do we only want leaf classes or not, True for only leaf, False for all
   leafs: True
@@ -11,10 +14,11 @@ classes:
 
 data:
   # Maximum number of final downloaded and processed samples per class
-  max_per_class: 200
-  # Start and end indicies for downloading some slice of the classes wanted
+  max_per_class: 10
+  # Start and end indicies for downloading some slice of the classes wanted at any given time
   # An end_index > num classes being downloaded will cause crash so use carefully
   start_index: 0
+  # Can set end_index: 'None' for full set download run
   end_index: 'None'
 
 dir:
@@ -24,4 +28,6 @@ dir:
   # This set to defualt 'big_data.csv' but can be replaced with a already downloaded set csv
   #     which with a matching 'suitable_classes.npy' file can be used to exactly reproduce a set
   df_file: 'big_data.csv'
+
+  cookie_path: 'C:/Users/user/Local PHD/Final AudioSet Repo Formatting/v1/cookies.txt'
 
