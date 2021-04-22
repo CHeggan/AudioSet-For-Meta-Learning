@@ -146,7 +146,7 @@ def download_audio(link, start, end, cookie_path):
 
     # Skips forward if try function fails, indicating the fle cannot be retrieved
     except Exception:
-        pass
+        filename ='0'
 
     return filename
 
@@ -182,8 +182,8 @@ def create_directories(textlabels, expected_dir):
         try:
             os.mkdir(text_label)
         except Exception:
-            pass
-
+            continue
+        
 
 def file_cleaning(filename, num_sample, start, end, defaultdir):
     """
