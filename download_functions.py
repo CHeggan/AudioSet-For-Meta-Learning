@@ -182,8 +182,9 @@ def create_directories(textlabels, expected_dir):
         try:
             os.mkdir(text_label)
         except Exception:
+            created = False
             continue
-        
+
 
 def file_cleaning(filename, num_sample, start, end, defaultdir):
     """
