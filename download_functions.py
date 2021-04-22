@@ -145,7 +145,7 @@ def download_audio(link, start, end, cookie_path):
 
 
     # Skips forward if try function fails, indicating the fle cannot be retrieved
-    except:
+    except Exception:
         pass
 
     return filename
@@ -168,7 +168,7 @@ def create_directories(textlabels, expected_dir):
     try: # Tries to find audiodataset folder and set as current directory
         defaultdir2=os.getcwd()+'/AudioSet_Data/'
         os.chdir(os.getcwd()+'/AudioSet_Data')
-    except: # If cant find one, makes new and sets as CWD
+    except Exception: # If cant find one, makes new and sets as CWD
         # This conditional stops the code from nesting infinitely
         if os.getcwd() == expected_dir:
             pass
@@ -181,7 +181,7 @@ def create_directories(textlabels, expected_dir):
     for i, text_label in enumerate(textlabels):
         try:
             os.mkdir(text_label)
-        except:
+        except Exception:
             pass
 
 
@@ -305,7 +305,7 @@ def main_download(defaultdir, samples_per_class, labels, textlabels, big_data, c
             # Combining the dataframes and then removing duplicated based on first column
             all_examples = pd.concat([all_examples, class_df]).drop_duplicates(subset='YID', keep=False,
                                                                                inplace=False, ignore_index=False)
-        except:
+        except Exception:
             class_df = pd.DataFrame(columns=['YID','MID','CLASS NAME','FILE NAME',
                         'OG FILE', 'SR'])
 
