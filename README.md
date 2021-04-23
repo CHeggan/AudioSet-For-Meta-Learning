@@ -82,8 +82,8 @@ One of the methods of getting around YouTube's 'Too Many Requests' issue is to u
 Although the download codes included in this repo function as intended and were perfectly sufficient for obtaining the slice of AudioSet that was sought after, there is definitely still room for improvement. Im sure there are many people that will be able to suggest better tweaks but the there are still some included here as a rough show of how things could be improved.
 
 General(both downloading scripts):
-- On passes of teh script and the mian meta-data sets, files that are unavilable due to any of the possible exeptions listed earlier or corrupted could be tracked and their details stored in another file or erased from teh main meta-data file. Both of these could be used in order to reduce total script execution time on recreations of sets, or creation of new and overlapped ones.
-- 
+- On passes of the script and the main meta-data sets, files that are unavilable due to any of the possible exeptions listed earlier or corrupted could be tracked and their details stored in another file or erased from the main meta-data file. Both of these could be used in order to reduce total script execution time on recreations of sets, or creation of new and overlapped ones.
+
 
 Multiprocessing:
 - One of the main things that appear to be slowing down the multiproceessing script is some large gap between downloading all files within a class and then converting them using ffmepg. Inferring form local runs, this effect approximately doubles the time of the script. It is not clear what exactly is causing this gap as the overheads for multi is reported by python at less than 1%. Reformatting the current version into two scripts(a download and a reformtting/cleaning) could be an interesting way of getting around this and obtaining the expected speedup.
