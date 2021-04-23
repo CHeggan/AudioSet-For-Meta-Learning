@@ -21,7 +21,7 @@ def hello
 end
 ```
 Should include here:
-- How to set up the hyper params and main YAML file for teh scripts
+- How to set up the hyper params and main YAML file for the scripts
 - How the num samples works, i.e there raent an equal number per class, so you get up to num in class if n> num in class
 - How teh different scripts thmselves interlink, creation of big data etc
 - rough space needed on dirve etc/ sizes of files and clips
