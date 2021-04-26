@@ -1,1 +1,1 @@
-The folder contains some handy PyTorch classes / functions for using AudioSet. All of these were built around use in Windows 10, which is why there are a few extra classes     included. 
+The folder contains some handy PyTorch classes / functions for using AudioSet. All of these were built around use in Windows 10, which is why there are a few extra classes     included. These extra classes are explained in their own documents, however a note here is that at the time of writing, they are not required when working in a Linux enviroment
