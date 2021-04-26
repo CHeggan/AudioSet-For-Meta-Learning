@@ -1,0 +1,1 @@
+This folder contains a variety of useful post-processing scripts for handling AudioSet specifically. These are included but not limited to conversions from .wav to .npy(80x speedup when loading into python), spectrogram conversions with control files and metric trackers for normalisation. 
