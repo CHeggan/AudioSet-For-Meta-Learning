@@ -3,6 +3,9 @@ Script deals with dataset wide conversion from .wav files to .npy files. The
     main motivation behind this is that .npy files can be loaded significantly
     faster into python than .wav files(~80x). This also allows other conversions,
     like the one to spectrograms, to be done much more quickly.
+The main function iterates over the so called 'old_dir'and creates  a mirror
+    directory in 'new_dir'.
+The script assumes that the 'new_dir' directory has already been created.
 """
 
 ###############################################################################
@@ -51,7 +54,7 @@ def main(old_dir, new_dir):
 
             try:
                 os.mkdir(temp_new)
-            except:
+            except Exception:
                 print(f'Already Created: {temp_new}')
 
             contained_classes = os.listdir(temp)
@@ -62,7 +65,7 @@ def main(old_dir, new_dir):
 
                 try:
                     os.mkdir(new_working_dir)
-                except:
+                except Exception:
                     print(f'Already Created: {new_working_dir}')
 
                 for file in os.listdir(working_dir):
@@ -74,23 +77,3 @@ def main(old_dir, new_dir):
 
 
 main(old_dir, new_dir)
-
-
-"""
-lib_start = time.time()
-data, sr = librosa.load('X:/Datasets/AudioSet/AudioSet_meta_split_raw_wav/meta_train_raw/Acoustic guitar/1.wav', sr=16000, mono=True)
-lib_end = time.time()
-print('Lib load', lib_end-lib_start)
-
-np.save('example_data.npy', data)
-
-np_start = time.time()
-data = np.load('example_data.npy')
-np_end = time.time()
-print('np time', np_end-np_start)
-print(data.shape)
-
-
-path = 'X:/Datasets/AudioSet/AudioSet_meta_split_raw_wav/meta_train_raw/Acoustic guitar/1.wav'
-print(path.split('/')[-1])
-"""

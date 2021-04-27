@@ -70,10 +70,10 @@ def main(old_dir, new_dir):
         new dir folder with per-sample normalised data.
 
     :param old_dir: str
-        The base directory which we wish to mirror. Contains our current raw and
-            un-normalised data
+        The base directory path which we wish to mirror. Contains our current
+            raw and un-normalised data
     :param new_dir: str
-
+        Path to the new directory in which we want out normalised data
     """
     #sets working dir as array parent folder
     os.chdir(new_dir)
@@ -88,7 +88,7 @@ def main(old_dir, new_dir):
 
         try:
             os.mkdir(temp_new)
-        except:
+        except Exception:
             print(f'Already Created: {temp_new}')
 
         contained_classes = os.listdir(temp)
@@ -99,7 +99,7 @@ def main(old_dir, new_dir):
 
             try:
                 os.mkdir(new_working_dir)
-            except:
+            except Exception:
                 print(f'Already Created: {new_working_dir}')
 
             for file in os.listdir(working_dir):
