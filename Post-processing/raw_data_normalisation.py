@@ -3,7 +3,7 @@ Script deals with per-sample normalisation of the raw audio signals after they
     have been converted from wav to npy.
 The main function iterates over the so called 'old_dir'and creates  a mirror
     directory in 'new_dir'.
-The script assumes that the 'new_dir' directory has already been created. 
+The script assumes that the 'new_dir' directory has already been created.
 """
 ###############################################################################
 # IMPORTS
@@ -47,7 +47,7 @@ def file_conversion(new_dir, current_path):
     if np.std(data) == 0.0:
         print(f'File: {current_path} was not saved due to std=0')
         return
-    elif data.shape[0] != 160000:
+    if data.shape[0] != 160000:
         print(f'File: {current_path} was not saved due to length {data.shape[0]} != 160,000')
         return
 
@@ -66,9 +66,12 @@ def file_conversion(new_dir, current_path):
 ###############################################################################
 def main(old_dir, new_dir):
     """
+    Iterates thorugh the folder structure of old directory and mirrors it in the
+        new dir folder with per-sample normalised data.
 
     :param old_dir: str
-
+        The base directory which we wish to mirror. Contains our current raw and
+            un-normalised data
     :param new_dir: str
 
     """
