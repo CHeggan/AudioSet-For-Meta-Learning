@@ -5,6 +5,8 @@ Already Made(essentially):
 - dataset classes 
 - raw to .npy script 
 - .npy to spectrogram
+- Stat recorder
+- Normalisation per channel and global
 
 New files:
 - meta splitting function(should be new version which actually changes raw file directories)
