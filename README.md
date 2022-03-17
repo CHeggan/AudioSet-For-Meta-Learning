@@ -17,7 +17,7 @@ Some important things to know about this dataset are the following:
 ## Basic Download Details
 ```bash
 python get_classes.py
-python download.py
+python single.py
 ```
 Should include here:
 - How to set up the hyper params and main YAML file for the scripts
