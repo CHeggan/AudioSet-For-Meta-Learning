@@ -13,8 +13,33 @@ Some important things to know about this dataset are the following:
 - In the bulk of the meta data supplied with the set that enables us to scrape it from YouTube, the classes are not labelled by name of event, but instead by some id. Id -> class name conversions are/can be done using the 'ontology.json' file.
 - Estimated qualities of sound events are given in the form of true counts per some number of samples form a given class. This additional level of evaluation appears to manual with a true count representeing the event appearing within a class sample, e.g if 8 out of 10 samples in some class contained the event it should it would have an 80% estimated quality.
 
+## Citation
+This code-base was written to support our investigation of few-shot acoustic classification. If you use any of the code included here, please cite our work which we used it for:
+```
+@article{MetaAudio,
+  author = {Calum Heggan et al.},
+  title = {Meta-Audio: A Few-Shot Audio Classification Benchmark},
+  year = {2022},
+  publisher = {ICANN},
+}
+```
+
+## Enviroment
+We use miniconda for our enviroment setup. For the purposes of reproduction we include the enviroment file. This can be set up using the following command:
+```
+conda env create --file youtube_download_env.txt
+```
 
 ## Basic Download Details
+### Scripts
+The codes are written in such a way that only a few files ever have to be accessed or explictly ran by a user. These include:
+ - control.yaml (Contains all of the parameters needed to run the codes included)
+ - get_relevant_meta_data.py (Generates suitable classes based on parameters in control file and compiles relevant metadata together)
+ - download_data.py (The main download function, this will be the script that will need to be left running/restarted where necessary)
+
+### How To Run
+Starting off, it is important to look at the control file listed above and tune the parameters needed for downloading the data, e.g. leaf nodes, minimum estimated quality and number of unique samples to try and download per suitable class. On top of this it is important to note that that we can also set a start and end index here which work over all of our 'suitable classes'. This allows us to download class-wise slices of our full dataset of interest at a time, meaning that the mian code does'nt have to be left running and then arbitrarily killed off. 
+
 ```bash
 python get_relevant_meta_data.py
 python single.py
