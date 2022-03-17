@@ -142,8 +142,3 @@ def main_get_classes(leafs, qual, path_to_meta):
     # Saves the 2D class array to a npy file for later loading
     np.save('suitable_classes', classes)
     #graphing(path_to_meta)
-
-###############################################################################
-# EXAMPLE CALL
-###############################################################################
-main_get_classes(True, 0.8, 'C:/Users/calum/Documents/GitHub/AudioSet-For-Meta-Learning/MetaData')

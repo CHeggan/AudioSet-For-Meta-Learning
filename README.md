@@ -16,7 +16,7 @@ Some important things to know about this dataset are the following:
 
 ## Basic Download Details
 ```bash
-python get_classes.py
+python get_relevant_meta_data.py
 python single.py
 ```
 Should include here:

@@ -128,7 +128,7 @@ def download_audio(link, start, end, cookie_path):
                 break
 
         # want to check teh length of the file so that we dont have smaples< 10s
-        length = ydl.extract_info(link)['duration']
+        length = youtube_dl.YoutubeDL(options).extract_info(link)['duration']
 
         # Files that are excatly 10s typically get shortened by a second, so 11s needed
         if  length < 11:
@@ -344,6 +344,7 @@ def main_download(defaultdir, samples_per_class, labels, textlabels, big_data, c
             # If file fails we move onto next sample
             if filename == '0':
                 num_failed += 1
+                print('failed')
                 continue
 
             # Track the successful download
