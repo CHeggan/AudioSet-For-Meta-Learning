@@ -29,5 +29,5 @@ dir:
   #     which with a matching 'suitable_classes.npy' file can be used to exactly reproduce a set
   df_file: 'big_data.csv'
 
-  cookie_path: 'C:/Users/user/Local PHD/Final AudioSet Repo Formatting/v1/cookies.txt'
+  cookie_path: 'cookies.txt'
 
