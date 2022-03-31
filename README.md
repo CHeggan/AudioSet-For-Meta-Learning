@@ -14,13 +14,13 @@ Some important things to know about this dataset are the following:
 - Estimated qualities of sound events are given in the form of true counts per some number of samples form a given class. This additional level of evaluation appears to manual with a true count representing the event appearing within a class sample, e.g if 8 out of 10 samples in some class contained the event it should it would have an 80% estimated quality
 
 ## Citation
-This code-base was written to support our investigation of few-shot acoustic classification. If you use any of the code included here, please cite our work which we used it for:
+This code-base was written to support our investigation of few-shot acoustic classification. If you use any of the code included here, please cite our upcoming work which we used it for:
 ```
 @article{MetaAudio,
   author = {Calum Heggan et al.},
   title = {Meta-Audio: A Few-Shot Audio Classification Benchmark},
   year = {2022},
-  publisher = {ICANN},
+  publisher = {arXiv},
 }
 ```
 
